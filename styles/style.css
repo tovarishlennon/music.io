@@ -1,0 +1,548 @@
+    /*External font for use from Google Fonts'*/
+
+    /* The em unit will be equal to the browser's default font size for the document, which is usually 16px. */
+
+    /* Regular font */
+
+    @font-face {
+        font-family: Lato;
+        src: url(../fonts/Lato-Regular.ttf);
+        font-weight: bold;
+    }
+
+    /* light version of Lato font */
+
+    @font-face {
+        font-family: Lato-light;
+        src: url(../fonts/Lato-Light.ttf);
+        font-weight: bold;
+    }
+
+    /* bold version of Lato font */
+
+    @font-face {
+        font-family: Lato-bold;
+        src: url(../fonts/Lato-Black.ttf);
+        font-weight: bold;
+    }
+
+    /* CSS reset */
+
+    * {
+        margin: 0;
+        padding: 0;
+        /* equal width to border box */
+        box-sizing: border-box;
+    }
+
+    /* default text is "Lato" */
+
+    /* default background color of html files is white (#fff)  */
+
+    /* default html height 100% */
+
+    html {
+        background-color: #fff;
+        color: #000;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        /* set height of body to 100% for fullscreen image */
+    }
+
+    /* navigation bar style */
+
+    nav {
+        position: relative;
+        /* relative to its normal position */
+        width: 100%;
+        /* full page width */
+        height: 80px;
+        /* height of navigation bar */
+        font-family: 'Lato-bold';
+    }
+
+    /*main navigation links style*/
+
+    .navbar {
+        float: right;
+        /* float navigation links to the right side */
+        margin: 0 15em 0 0;
+        /* margin to the right side for sompe space */
+    }
+
+    /*title and icon style*/
+
+    .title {
+        float: left;
+        /* float left of the Website name */
+        font-size: 25px;
+        /* font size of Website name */
+        margin: -15px 0 0 15em;
+        /* positioning it to be aligned vertically in the center */
+    }
+
+    .title i {
+        color: #fff;
+        /* color of icon */
+        float: left;
+        /* float "headphone" icon to left side of Website name  */
+        margin: 40px 0 0 0;
+        /* margin from top  */
+    }
+
+    .title li a:hover {
+        color: #fff;
+        /* color it to white if hovered */
+    }
+
+    /*navigation bar unordered list style*/
+
+    ul {
+        list-style-type: none;
+        /* no list style markers */
+        background-color: #000;
+        /* same background as navigation bar */
+        height: 80px;
+    }
+
+    /*links style */
+
+    li {
+        float: left;
+        /* float list items to the left side */
+        margin: 1em 1em 0 0;
+    }
+
+    li a {
+        display: block;
+        /* display block of links */
+        color: white;
+        /* color links to white color  */
+        text-align: center;
+        /* align links in the center */
+        padding: 14px 16px;
+        /* padding of 14 px from top and bottom, 16px from left and right */
+        text-decoration: none;
+        /* no link text-decoration */
+    }
+
+    li a:hover {
+        color: #0acc5e;
+        /* links are colored to green when mouse over it  */
+    }
+
+    /*------------------------*/
+
+    /*distinguishing active links*/
+
+    .active {
+        color: #0acc5e;
+        /* and this color stay when links are active */
+    }
+
+    .current {
+        color: #0acc5e !important;
+        /* and this color stay when footer links are active */
+    }
+
+    .home-one {
+        background-image: linear-gradient(0deg, rgba(128, 128, 128, 0.219), rgba(255, 217, 0, 0.288)), url(../images/section-one.jpeg);
+    }
+
+    /* putting image in each section and applying 2 colors gradient over it  */
+
+    .home-two {
+        background-image: linear-gradient(0deg, rgba(49, 49, 49, 0.342), rgba(0, 132, 255, 0.205)), url(../images/section-two.jpeg);
+    }
+
+    /* putting image in each section and applying 2 colors gradient over it  */
+
+    .home-three {
+        background-image: linear-gradient(0deg, rgba(49, 49, 49, 0.342), rgba(117, 3, 3, 0.397)), url(../images/section-three.jpeg);
+    }
+
+    /* putting image in each section and applying 2 colors gradient over it  */
+
+    .home-one,
+    .home-two,
+    .home-three {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    /* position of image applied to all home page sections at the same time  */
+
+    /* style of home page h1 tags */
+
+    .home-one h1,
+    .home-two h1,
+    .home-three h1 {
+        font-family: 'Lato-bold';
+        /* making font bold */
+        text-align: center;
+/* horizontally in the center headlines */
+        color: #fff;
+        /* completely white  */
+        text-transform: uppercase;
+        /* make all text uppercase */
+        padding-top: 15%;
+        /* padding from top 15% */
+        font-size: 100px;
+        /* font size of 100px */
+        margin-bottom: 50px;
+        /* margin between text and button  */
+    }
+
+    .home-two h1 {
+        font-size: 70px;
+        /* second h1 is smaller */
+    }
+/* buttons style  */
+    .button {
+        transition-property: color, background-color;
+        /* applied animation to the color and background color with CSS transition */
+        transition-duration: .3s;
+        /* transition duration of 0.3 seconds  */
+        letter-spacing: 2px;
+        /* space among letters of text */
+        text-transform: uppercase;
+        /* make all text uppercase */
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        /* mouse cursor is pointer */
+        border: 2px solid #fff;
+        /* border of white solid line with boldness of 2px */
+        font-size: 18px;
+        border-radius: 30px;
+        /* making border round */
+        padding: 15px 40px;
+        text-decoration: none;
+        font-family: 'Lato-bold';
+    }
+
+    .button:hover {
+        color: #000;
+        background-color: #fff;
+        /* when hovered color is black and background is white */
+    }
+
+    footer 
+    /* footer style */
+    {
+        background-color: #000;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+/* footer website style */
+    .footer-title {
+        padding-top: 3em;
+        font-size: 25px;
+        margin: 0 0 25px 0;
+    }
+
+    .footer-title a {
+        text-decoration: none;
+        color: inherit;
+        /* inherit color value from footer tag property */
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: inherit;
+        /* inherit color value from footer tag property */
+        margin: 2em 2em 0 0;
+    }
+
+    .footer-links a:hover {
+        color: #0acc5e;
+        /* green color when hovered links */
+    }
+
+    .footer-social {
+        font-size: 2em;
+        /* size of social icons */
+        padding: 1em;
+        /* padding of 1 em */
+        
+    }
+
+    .footer-social a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer-social i {
+        margin: 20px;
+        /* space between icons  */
+    }
+
+    .footer-social i:hover {
+        color: #0acc5e;
+        cursor: pointer;
+        /* icons hover style */
+    }
+
+    .footer-social a:visited {
+        text-decoration: none;
+        color: #fff;
+        /* reset styling of visited social icons */
+    }
+
+    .footer-social p {
+        font-size: 15px;
+        color: rgb(143, 143, 143);
+        font-family: 'Lato-light';
+        margin-top: 1em;
+    }
+    .artist-links {
+        margin-top: 2em;
+    }
+    .artist-links a {
+            text-decoration: none;
+            color: inherit;
+            /* inherit color value from footer tag property */
+            color: #aaaaaa;
+            /* green color when hovered links */
+            margin: 1em;
+            
+    }
+   
+    .artist-links a:hover {
+        color: #0acc5e;
+        /* green color when hovered links */
+    }
+
+    .artists h1 {
+        /* artist page headline style */
+        text-align: center;
+        font-family: 'Lato-light';
+        font-size: 6em;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .artists {
+        text-align: center;
+        /* make all elements stay at the center of page */
+    }
+
+    .artist-wrap 
+    /* styling div for containing artists' image and name */
+    {
+        display: inline-block;
+        /* display- inline block */
+        border-radius: 25px;
+        /* make border edges round  */
+        margin: 2em;
+        /* certain amount of width and height applied  */
+        height: 42em;
+        -webkit-box-shadow: 0px 0px 96px 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 96px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 96px 3px rgba(0, 0, 0, 0.3);
+        /* box shadow style  */
+    }
+/* ----------------------------name background style------------------------  */
+    div.artist-one {
+        background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+    }
+
+    div.artist-two {
+        background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    }
+
+    div.artist-three {
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    }
+
+    div.artist-four {
+        background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    }
+    /* ------------------------------------- */
+
+    div.imgwrap {
+        /* no overflow of image from its parent div  */
+        overflow: hidden;
+        width: 50em;
+        /* certain amount of width and height applied  */
+        height: 35em;
+        border-radius: 25px;
+        /* same radius as its parent element */
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        /* but no border radius at bottom left and right sides of box  */
+    }
+
+    div.imgwrap img {
+        width: 100%;
+        height: 100%;
+        /* 100% width and hegiht for fitting it in parent box  */
+        transform: scale(1);
+        /* initial scale is deafult  */
+        transition: transform .3s ease-in-out;
+        /* animation of scaling of image */
+    }
+
+    div.imgwrap img:hover {
+        /* when hovered over image change its scale to .15 more */
+        transform: scale(1.15);
+        transition: transform .3s ease-in-out;
+        /* and also applied animation */
+    }
+
+    .artist-wrap p 
+    /* artist name style */
+    {
+        font-family: 'Lato-light';
+        font-size: 3em;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .info h1,
+    .topchart h1,
+    .aboutpage h1 {
+        margin: 2em;
+        font-size: 3em;
+        font-family: 'Lato-light';
+        text-align: center;
+    }
+    /* info, topchart and about page h1 styles  */
+
+    .infocontainer {
+        text-align: center;
+        margin: 4em;
+    }
+/* image position and its float to the left */
+    .image {
+        display: inline-block;
+        float: left;
+    }
+
+    .bio {
+        display: inline-block;
+        width: 50%;
+        /* half of the width */
+        text-align: justify;
+        /* justift txt alignment */
+    }
+
+    table {
+        /* table border collapse */
+        border-collapse: collapse;
+        margin: 2em auto;
+        /* margin 2 em from top and bottom, and at the center from right to left */
+    }
+
+    table a {
+        text-decoration: none;
+        color: rgb(0, 110, 255);
+        /* styling links within table */
+    }
+
+    table a:hover {
+        text-decoration: underline;
+        /* when hover underlining it */
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 1em;
+        /* padding of 1 em in each cell */
+        font-family: 'Lato-light';
+        font-size: 25px;
+
+        /* table cells style */
+    }
+
+    table img {
+        width: 120px;
+        height: 140px;
+        /* exact width and height of images in the table  */
+    }
+
+    .topchart p {
+        text-align: center;
+        padding: 1em;
+        /* text in the table is centered */
+    }
+
+    .topnumber {
+        font-family: 'Lato';
+        font-size: 70px;
+    }
+
+    /* ----------------------------------------------------------------------------- */
+
+    /* styling blockquote tag */
+
+    blockquote {
+        font-family: Georgia, serif;
+        /* font-family - Georgia */
+        font-size: 25px;
+        /* font-size 25 pixels */
+        font-style: italic;
+        /* style of font is italic - appropriate for blockquoting   */  
+        width: 700px; 
+        /* width of quote block */
+        margin: 2em auto;
+        /* margin 2 em from top and bottom, and at the center from right to left */
+        padding: 3em 40px;
+        /* height of each line */
+        line-height: 1.45;
+        /* height between the lines of text */
+        position: relative;
+        /* position is relative to its normal position  */
+        color: #383838;
+        /* color of text */
+    }
+
+    blockquote:before 
+    /* style of quote sign  */
+    {
+        display: block;
+        /* display - block */
+        content: "\201C";
+        /* "content is used to insert generated content" */
+        font-size: 110px;
+        /* size quote sign - 110 pixels  */
+        position: absolute;
+        /* position absolute- nearest to its parent element */
+        left: -20px;
+        /* - 20 pixels from left  */
+        top: -20px;
+        /* - 20 pixels from top  */
+        color: #7a7a7a;
+        /* color of quote sign  */
+    }
+
+    blockquote cite 
+    
+    {
+        /* cite style  */
+        color: #999999;
+        font-size: 18px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    blockquote cite:before {
+        /* the dash content is inserted */
+        content: "\2014 \2009";
+
+    }
+
+    /* ----------------------------------------------------------
+    re-used code from https://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/ */
